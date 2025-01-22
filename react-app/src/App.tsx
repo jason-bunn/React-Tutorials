@@ -1,4 +1,5 @@
 import Alert from "./components/Alert";
+import Button from "./components/Button";
 
 function App() {
     //let items = ["New York", "Atlanta", "Chicago", "San Francisco", "Tokyo"];
@@ -8,7 +9,10 @@ function App() {
     }
     return (
         <div>
-           <Alert />
+            <Alert>
+                <span>Hello World</span>
+            </Alert>
+            <Button onClick={() => console.log("Clicked")}>MyButton</Button>
         </div>
     );
 }
